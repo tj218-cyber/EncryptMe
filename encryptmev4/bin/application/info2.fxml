@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="945.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar fx:id="mymenubar" layoutY="2.0" prefHeight="25.0" prefWidth="945.0">
+         <menus>
+            <Menu fx:id="options" mnemonicParsing="false" text="Options">
+               <items>
+                  <MenuItem fx:id="mainpage" mnemonicParsing="false" onAction="#mainmenu" text="Main Page" />
+                  <MenuItem fx:id="exitpage" mnemonicParsing="false" onAction="#exit" text="Exit" />
+               </items>
+            </Menu>
+            <Menu fx:id="algorithms" mnemonicParsing="false" text="Algorithms">
+               <items>
+                  <MenuItem fx:id="aespage" mnemonicParsing="false" onAction="#aesmenu" text="AES" />
+                  <MenuItem fx:id="despage" mnemonicParsing="false" onAction="#desmenu" text="3DES" />
+                  <MenuItem fx:id="rsapage" mnemonicParsing="false" onAction="#rsamenu" text="RSA" />
+                  <MenuItem fx:id="hashpage" mnemonicParsing="false" onAction="#hashmenu" text="Hashing" />
+               </items>
+            </Menu>
+            <Menu fx:id="info" mnemonicParsing="false" text="Info">
+               <items>
+                  <MenuItem fx:id="whatpage" mnemonicParsing="false" onAction="#whatmenu" text="What is Encryption?" />
+                  <MenuItem fx:id="whypage" mnemonicParsing="false" onAction="#whymenu" text="Why should I encrypt my data?" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Text layoutX="372.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EncryptMe">
+         <font>
+            <Font name="Calibri" size="45.0" />
+         </font>
+      </Text>
+      <Text layoutX="346.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Navigate to the info section for a tutorial about what encryption is, and how it can benefit you!" wrappingWidth="254.4140625">
+         <font>
+            <Font name="Calibri" size="13.0" />
+         </font>
+      </Text>
+      <TextArea editable="false" layoutX="32.0" layoutY="114.0" prefHeight="438.0" prefWidth="880.0" text="Why should I encrypt my data?&#10;&#10;Encrypting your data helps protext private information! This means that even if your device was hacked, the attacker would have &#10;little chance of accessing it." />
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="572.0" layoutY="39.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
